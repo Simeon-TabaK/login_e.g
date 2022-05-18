@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
+
+<head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <link rel="stylesheet" href="assets/css/demo.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div id="wrapper" class="container-flux">
+        <div class="vertical-align-wrap">
+            <div class="vertical-align-middle">
+                <div class="panel-body ">
+                    <div class="content">
+                        <div class="panel">
+                            <div class="header">
+                                <h2 class="" style="text-align: center;">Creation d'un compte <span id="rapport"></span> </h2>
+                            </div>
+                            <form class="panel-body row" method="POST">
+                                <div class=" col-md-4 left"></div>
+                                <div class=" col-md-4 left" id="first">
+                                    <div class="form-group">
+                                        <label for="name" class="control-label ">Nom*</label>
+                                        <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postnom" class="control-label ">Post-nom*</label>
+                                        <input type="text" class="form-control" id="postnom" placeholder="Entrez  le post-nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="prenom" class="control-label ">Prenom*</label>
+                                        <input type="text" class="form-control" id="prenom" placeholder="Entrez le renom">
+                                    </div>
+                                    <div class="form-group"><label for="genre" class="control-label ">Sexe*</label>
+                                        <select class="form-control" name="genre" id="genre">
+                                            <option value="M">M</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="lieu" class="control-label ">Lieu de naissance*</label>
+                                            <input type="text" class="form-control" id="lieu" placeholder="Date de naissance">
+                                        </div><div class="form-group col-md-6">
+                                            <label for="daten" class="control-label ">Date de naissance*</label>
+                                            <input type="date" class="form-control" id="daten">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="Nationalite" class="control-label ">Nationalite*</label>
+                                            <input type="text" class="form-control" id="Nationalite" placeholder="Nationalite">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="Residence" class="control-label ">Residence*</label>
+                                            <input type="text" class="form-control" id="Residence" placeholder="Residence">
+                                        </div>
+                                    </div>
+                                    <div style="color: rgb(155, 217, 61); text-align: center;"><span id="message"> </span></div>
+                                    <div class="btn-sub" style="text-align: right; margin: 10px;" id="step1">
+                                        <span class="lead btn btn-primary">Suivant</span>
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 left" id="second">
+                                    <fieldset>
+                                        <legend>Etude:</legend>
+                                        <div class="form-group">
+                                            <label for="Faculte" class="control-label ">Faculte*</label>
+                                            <select class="form-control" name="Faculte" id="Faculte">
+                                                <option value="FD">FD</option>
+                                                <option value="FM">Mercedes</option>
+                                                <option value="FSEG">FESG</option>
+                                                <option value="FSTA">FSTA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Cyle" class="control-label ">Cycle*</label>
+                                            <select class="form-control" name="Cyle" id="Cyle">
+                                                <option value="Licence">Licence</option>
+                                                <option value="Master">Master</option>
+                                                <option value="Doctorat">Doctorat</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="promotion" class="control-label ">Promotion*</label>
+                                            <select class="form-control" name="promotion" id="promotion">
+                                                <option value="BAC1">BAC1</option>
+                                                <option value="BAC2">BAC2</option>
+                                                <option value="BAC3">BAC2</option>
+                                                <option value="M1">M1</option>
+                                                <option value="M2">M2</option>
+                                            </select>
+                                        </div>
+                                        <div class="btn-sub" style="text-align: right; margin: 10px;" id="step2">
+                                            <span class="lead btn btn-primary">Suivant</span>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class=" col-md-4 left" id="last">
+
+                                    <fieldset>
+                                        
+                                        <div class="form-group">
+                                            <label for="email" class="control-label">Email*</label>
+                                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="control-label sr-only">Password*</label>
+                                            <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="control-label sr-only">Password*</label>
+                                            <input type="password" class="form-control" id="password_" placeholder="Confirmer mot de passe">
+                                        </div>
+                                        <div class="form-group clearfix">
+                                            <label class="fancy-checkbox element-left">
+                                                <input type="checkbox" id="PasswordView">
+                                                <span>Afficher le mot de passe</span>
+                                            </label>
+                                        </div>
+                                        <div class="btn-sub" style="text-align: right; margin: 10px;" id="step3">
+                                            <span class="lead btn btn-primary">Enregistrer</span>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bottom " id="login_" style="text-align: center; font-size: large;">
+                            <span class="helper-text"><i class="fa fa-sign-in"></i> <a href="index.html">J'ai deja un compte</a></span>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END WRAPPER -->
+</body>
+
+</html>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script>
+    document.getElementById("first").style.display = "none";
+    document.getElementById("second").style.display = "none";
+    document.getElementById("last").style.display = "none";
+    $(document).ready(function() {
+
+        $("#rapport").html(" ~ 1/3")
+        // show modal
+        $("#login_").click(function() {
+            window.location.href = "index.html"
+        });
+
+        // FIRST DIV SHOWN
+        $('#first').show();
+        
+        var name = $('#nom').val()
+        var postnom = $('#postnom').val()
+        var prenom = $('#prenom').val()
+        var lieu = $('#lieu').val()
+        var daten = $('#daten').val()
+        var genre = $('#genre').val()
+        var Nationalite = $('#Nationalite').val()
+        var Residence = $('#Residence').val()
+        // IDENTITY ENTERED
+        $("#step1").click(function(){
+            // alert('step1')
+            name = $('#nom').val()
+            postnom = $('#postnom').val()
+            prenom = $('#prenom').val()
+            lieu = $('#lieu').val()
+            daten = $('#daten').val()
+            genre = $('#genre').val()
+            Nationalite = $('#Nationalite').val()
+            Residence = $('#Residence').val()
+            
+            if (name=='' || postnom=='' || prenom=='' || lieu=='' || daten=='' || genre=='' || Nationalite=='' || Residence==''){
+                $('#message').text('Veuillez remplir tous les champs');
+            } else{
+                $('#first').hide();
+                $('#second').show();
+
+            }
+        });
+        
+        
+        // STUDY ENTERED
+        var Faculte = $('#Faculte').val()
+        var Cyle = $('#Cyle').val()
+        $("#step2").click(function(){
+            // alert('step2')
+            Faculte = $('#Faculte').val()
+            Cyle = $('#Cyle').val()
+
+            // alert(Faculte)
+
+            
+            $('#second').hide();
+            $('#last').show();
+        });
+
+        // LOGIN ENTERED
+        var email = $('#email').val()
+        var password = $('#password').val()
+        $("#step3").click(function(){
+            // alert('step3')
+            email = $('#email').val()
+            password = $('#password').val()
+
+            // alert($('#postnom').val())
+
+            // SEND LOGIN
+            $.post("src/logintraitment.php", {
+                        login: $('#step3').val(),
+                        
+                        name : $('#nom').val(),
+                        postnom : $('#postnom').val(),
+                        prenom : $('#prenom').val(),
+                        lieu : $('#lieu').val(),
+                        daten : $('#daten').val(),
+                        genre : $('#genre').val(),
+                        Nationalite : $('#Nationalite').val(),
+                        Residence : $('#Residence').val(),
+                        
+                        Faculte : $('#Faculte').val(),
+                        promotion : $('#promotion').val(),
+                        Cyle : $('#Cyle').val(), 
+                    
+                        email : $('#email').val(),
+                        password : $('#password').val()
+                    },
+                    function(data, status) {
+                        alert("Data: " + data + "\nStatus: " + status);
+                        if (data == '') {
+                            alert('Vous etes bien enregistre, clic sur ok pour avoir la page de connexion')
+                            window.location.href = "index.html"
+                        } else {
+                            $('#message').text('E-mail ou mot de passe errone');}
+                    });
+        });
+
+        //CONFIRMATION CODE VERIFICATION
+        var verification = false;
+        $("#ConfirmPassword1").keyup(function() {
+            var password = $("#ConfirmPassword").val();
+            var confirmPassword = $("#ConfirmPassword1").val();
+            if (password != confirmPassword) {
+                $("#message2").text("Passwords does not match!");
+                verification = false;
+            } else if (verification = '') {
+                verification = false;
+            } else {
+                $("#message2").text("Passwords match.");
+                verification = true;
+            }
+
+        });
+
+        //CHANGER TYPE OF INPUT PASSWORD
+        $("#PasswordView").change(function() {
+            if ($(this).is(':checked')) {
+                $('#password').attr('type', 'text');
+                $('#password_').attr('type', 'text');
+            } else {
+                $('#password').attr('type', 'password');
+                $('#password_').attr('type', 'password');
+            }
+        });
+
+
+
+    });
+</script>
